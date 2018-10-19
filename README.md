@@ -11,6 +11,9 @@ Git is a version control system that runs in the command line which means that i
 ## Initial Setup
 
 In order to start coding, you need to set up a Github account.
+Here is how you do it in steps:
+1. go to [github signing up page](https://github.com/join?source=header-home)
+2. create a username and put your email with a passoword of your preference (if you are an HSTAT student, please use your HSTAT email and passoword)
 
 ---
 ## Repository Setup
