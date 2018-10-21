@@ -51,6 +51,15 @@ To make a repository in github, called a remote, you need to follow the steps be
 
 Now you've made a new repository, you need to do some coding and save your code to the repository you made.
 
+* First, make some edits and writing to your file.
+* To start adding and saving all those changes, you need to initialize git in your directory to make it ready to accept any git commands. We do this **only once** at the beginning.
+    * To initialize git, type **`git init`**
+* After initializing git or starting it up, you need to add the changes you made to the staging area, making it ready to be saved (aka committed) 
+    * To add those changes to the staging area, you need to type **`git add filename`** (filename = the name you gave to your file)
+    * Did you know that there are shortcuts with adding that you can take? Well, you can type **`git add .`** which will add all new and modified files that are changed, or you can type **`git add --all`** which will add all changes files, including new, modified, renamed, and deleted files. (`git add .` does NOT add any renamed or deleted files)
+* After adding, we commit our changes which means saving them, but they don't go up to the repository we made yet.
+    * To commit your changes, type **`git commit -m "short message"`** (short message = a very short and specific message you give to yourself and others reading your work. This message identifies what changes you made before adding your work to the stage, so you won't get lost with all the commits you made. Remember: The message has to be short, specific, and in the present tense).
+
 
 ---
 ## Workflow & Commands
