@@ -61,6 +61,7 @@ Now you've made a new repository, you need to do some coding and save your code 
     * To commit your changes, type **`git commit -m "short message"`** (short message = a very short and specific message you give to yourself and others reading your work. This message identifies what changes you made before adding your work to the stage, so you won't get lost with all the commits you made. Remember: The message has to be short, specific, and in the present tense).
 
 
+
 ---
 ## Workflow & Commands
 
