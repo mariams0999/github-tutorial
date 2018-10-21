@@ -33,11 +33,23 @@ Taking that into consideration, here are the steps of switching from HTTPS key t
 10. Go back into your Cloud9 and open your workspace
 11. Type **SSh -T git@github.com**
 
-Then, You are done with your initial setup
+Then, You are done with your initial setup!
 
 ---
 ## Repository Setup
 
+After setting up your account and switching to an SSH key, you need to set up a repository. We do this because we need every change and commit we make to be saved in those repositories forever.
+
+To make a repository in github, called a remote, you need to follow the steps below:
+1. Go to your git workspace ([cloud9](c9.io) if you are using it)
+2. Make a directory and a file where you will put your work in (if you don't know how to do that, search "**Command Line**")
+3. Go to [github.com](github.com) and sign in
+4. Click on the plus sign (+) at the top right corner
+5. Click on **New Repository** 
+6. Give the repository a name (a helpful suggestion is to give your repo the same name as your directory you made earlier)
+7. Leave everything else the same and click on **Create Repository**
+
+Now you've made a new repository, you need to do some coding and save your code to the repository you made.
 
 
 ---
