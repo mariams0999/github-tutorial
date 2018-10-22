@@ -53,17 +53,31 @@ Now you've made a new repository, you need to do some coding and save your code 
 
 * First, make some edits and writing to your file.
 * To start adding and saving all those changes, you need to initialize git in your directory to make it ready to accept any git commands. We do this **only once** at the beginning.
-    * To initialize git, type **`git init`**
+    * To initialize git, type **`git init`** in the the directory you are working in 
 * After initializing git or starting it up, you need to add the changes you made to the staging area, making it ready to be saved (aka committed) 
     * To add those changes to the staging area, you need to type **`git add filename`** (filename = the name you gave to your file)
     * Did you know that there are shortcuts with adding that you can take? Well, you can type **`git add .`** which will add all new and modified files that are changed, or you can type **`git add --all`** which will add all changes files, including new, modified, renamed, and deleted files. (`git add .` does NOT add any renamed or deleted files)
-* After adding, we commit our changes which means saving them, but they don't go up to the repository we made yet.
+* After adding, we commit our changes which means saving them, but they don't go up to the repository we made yet (think of it as taking a screenshot of your work, but you still need to save this screenshot permenantly on your computer which will be github in this case!).
     * To commit your changes, type **`git commit -m "short message"`** (short message = a very short and specific message you give to yourself and others reading your work. This message identifies what changes you made before adding your work to the stage, so you won't get lost with all the commits you made. Remember: The message has to be short, specific, and in the present tense).
 
 ---
 ## Workflow & Commands
 
+After adding and committing your work using the two commands **`git add`** and **`git commit -m "short message"`**, you need to push all your work to the repository you just made (think of it as saving this screenshot permenantly on github!)   
+However, before doing that, you need to build that bridge or connection between your git workspace and github (think of it as the Brooklyn Bridge that is built to connect Brooklyn with Manhattan, so people can transfer on it in New York!)
+* To build that bridge, type git **`git remote add origin URL`**
+    * 
+* To push your work to github where you can save your work permenantly, type `git push -u origin master`
 
+If you ever got lost, you can always type **`git status`** (optional)
+* `git status` will show you if you haven't added your file once it was changed to the statging area which will appear in red.
+* It will show you if you have added your file, but didn't commit yet which will appear in green.
+* It will show you what commands you can use to fix your problems.
+    * Example: If you haven't added your file to the stage, it will show you how you can add it by using `git add`
+
+If you want to review your commits, you can head to github.com and look for that or you can type **`git log`** 
+* `git log` will show you all the past commits made for this repository and will give you an SHA number for each commit (it is like an ID number for each commit).
+* If your arrow got stuck in `git log`, press Q to quit.
 
 ---
 ## Rolling Back Changes
