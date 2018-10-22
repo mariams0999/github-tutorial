@@ -65,9 +65,15 @@ Now you've made a new repository, you need to do some coding and save your code 
 
 After adding and committing your work using the two commands **`git add`** and **`git commit -m "short message"`**, you need to push all your work to the repository you just made (think of it as saving this screenshot permenantly on github!)   
 However, before doing that, you need to build that bridge or connection between your git workspace and github (think of it as the Brooklyn Bridge that is built to connect Brooklyn with Manhattan, so people can transfer on it in New York!)
-* To build that bridge, type git **`git remote add origin URL`**
-    * 
+* To build that bridge, type **`git remote add origin URL`**
+    * `git` is a git command
+    * `remote` is your external repository that is on github
+    * `add` is for adding your files to the remote repository
+    * `origin` is the nickname of your remote repository (origin = standard)
+    * URL is the location of your remote repository on github (make sure it is always in SSH! Refer back to initial setup to know how to do that!)
+
 * To push your work to github where you can save your work permenantly, type `git push -u origin master`
+    * git is a git command
 
 If you ever got lost, you can always type **`git status`** (optional)
 * `git status` will show you if you haven't added your file once it was changed to the statging area which will appear in red.
