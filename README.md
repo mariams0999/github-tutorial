@@ -5,7 +5,7 @@ _by Mariam Saleh_
 ---
 ## Git vs. GitHub
 
-Git is a version control system that runs in the command line which means that it keeps track of different verions of your code and save the changes you make to your files. However, Github is where you make repositories which is where you save your code forever, so if something happened to your git workspace for some reason, your code and files are always saved on Github. Git doesn't require Github to work, but Github requires Git. 
+Git is a version control system that runs in the command line which means that it keeps track of different verions of your code and save the changes you make to your files. However, Github is where you make repositories which is where you save your code forever, so if something happened to your git workspace for some reason, your code and files are always saved on Github. Git doesn't require Github to work, but Github requires Git. Additionally, Github is a good source to use to collaborate with others.
 
 ---
 ## Initial Setup
@@ -114,12 +114,17 @@ If you saved, added, commited, or pushed your work by accident, you can just und
 * What if you wanted to un-add and un-commit at the same time in one command?   
 Well, you can do that by typing **`git reset HEAD~1`** and it will undo whatever you just added and commited.
 
-**Note:** Unfortunatelly, you can't use `git status` for this command, but you can always use **Google** to search it up (like my teacher always says "Google is your friend :)"). 
+**Note:** Unfortunately, you can't use `git status` for this command, but you can always use **Google** to search it up (like my teacher always says "Google is your friend :)"). 
 
 * What if you wanted to unedit, un-add and un-commit all at the same time in one command this time?   
 You can type **`git reset --hard HEAD~1`** and it will unedit, un-add, and un-commit all in one command.
 
-**Note:** Unfortunatelly, you can't use `git status` for this command too, but you can always use **Google** to search it up.
+**Note:** Unfortunately, you can't use `git status` for this command too, but you can always use **Google** to search it up.
+
+* If you have already pushed your work, you can un-push by typing **`git revert SHA`** (SHA = the number of your commit which you will get from typing `git log`.) Type the SHA number of the HEAD commit to go back to your previous commit and everything will look like that commit.
+
+**Note:** This command is not recommended because it can mess up your work and your partner's work when collaborating.   
+**Note:** Unfortunately, you can't use `git status` for this command too, but you can always use **Google** to search it up.
 
 #### You are now done with the Github Tutorial. Good Job! Now go and do some coding to have some fun!
 
