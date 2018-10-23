@@ -99,7 +99,7 @@ If you want to review your commits, you can head to github.com and look for that
 
 If you saved, added, commited, or pushed your work by accident, you can just undo what you did. Here is how:
 
-* If you saved your work, but you haven't added anything yet to the staging area, you can type **`git checkout -- filename`** (filename = the name of your file). 
+* If you edited your work, but you haven't added anything yet to the staging area, you can type **`git checkout -- filename`** (filename = the name of your file) and it will unedit what you typed to make it look like the last commit (called the HEAD commit) 
 
 **Note:** An easier way than just remembering it, you can type **`git status`** and it will give you two options on how to add your work using **`git add filename`** and on how to unedit or unsave your work, so it would look like the last commit (called HEAD commit) using **`git checkout -- filename`**.
 
@@ -111,12 +111,15 @@ If you saved, added, commited, or pushed your work by accident, you can just und
 
 **Note:** Type **`git status`** instead of remembering it. It will give you the options on how to push your work and how to un-commit it.
 
-* What if you wonted to un-add and un-commit at the same time in one command?   
+* What if you wanted to un-add and un-commit at the same time in one command?   
 Well, you can do that by typing **`git reset HEAD~1`** and it will undo whatever you just added and commited.
 
-**Note:** Unfortunatelly you can't use `git status` for this command, but you can always use **Google** to search it up (like my teacher always says "Google is your friend :) ") 
+**Note:** Unfortunatelly, you can't use `git status` for this command, but you can always use **Google** to search it up (like my teacher always says "Google is your friend :)"). 
 
+* What if you wanted to unedit, un-add and un-commit all at the same time in one command this time?   
+You can type **`git reset --hard HEAD~1`** and it will unedit, un-add, and un-commit all in one command.
 
+**Note:** Unfortunatelly, you can't use `git status` for this command too, but you can always use **Google** to search it up.
 
-
+#### You are now done with the Github Tutorial. Good Job! Now go and do some coding to have some fun!
 
