@@ -64,16 +64,25 @@ Now you've made a new repository, you need to do some coding and save your code 
 ## Workflow & Commands
 
 After adding and committing your work using the two commands **`git add`** and **`git commit -m "short message"`**, you need to push all your work to the repository you just made (think of it as saving this screenshot permenantly on github!)   
+
 However, before doing that, you need to build that bridge or connection between your git workspace and github (think of it as the Brooklyn Bridge that is built to connect Brooklyn with Manhattan, so people can transfer on it in New York!)
-* To build that bridge, type **`git remote add origin URL`**
+* To build that bridge, type **`git remote add origin URL`**   
+To understand it better, here is the break down:
     * `git` is a git command
     * `remote` is your external repository that is on github
     * `add` is for adding your files to the remote repository
     * `origin` is the nickname of your remote repository (origin = standard)
     * URL is the location of your remote repository on github (make sure it is always in SSH! Refer back to initial setup to know how to do that!)
 
-* To push your work to github where you can save your work permenantly, type `git push -u origin master`
-    * git is a git command
+* To push your work to github where you can save your work permenantly, type `git push -u origin master`   
+To understand it better, here is the breakdown:
+    * `git` is a git command
+    * `push` is sending your work from your local repository (git workspace) to your remote repository (github) 
+    * `-u` means upstream and you type it once when you first push your work to tell the computer to remember that this is the remote repository and the branch you want to push to every time
+    * `origin` is the remote we are pushing to
+    * `master` is the main branch 
+
+(**Note:** if you typed `git push -u origin master` the first time you pushed, you don't have to type this long command again every time you push. Just type `git push` and the computer will remember where to push to)
 
 If you ever got lost, you can always type **`git status`** (optional)
 * `git status` will show you if you haven't added your file once it was changed to the statging area which will appear in red.
@@ -87,3 +96,27 @@ If you want to review your commits, you can head to github.com and look for that
 
 ---
 ## Rolling Back Changes
+
+If you saved, added, commited, or pushed your work by accident, you can just undo what you did. Here is how:
+
+* If you saved your work, but you haven't added anything yet to the staging area, you can type **`git checkout -- filename`** (filename = the name of your file). 
+
+**Note:** An easier way than just remembering it, you can type **`git status`** and it will give you two options on how to add your work using **`git add filename`** and on how to unedit or unsave your work, so it would look like the last commit (called HEAD commit) using **`git checkout -- filename`**.
+
+* If you added your work to the staging area, but you haven't committed yet, you can type **`git reset HEAD filename`** and it will un-add your work to the staging area.
+
+**Note:** Type **`git status`** instead of remembering it. It will give you the options on how to commit your work and how to un-add it.
+
+* If you committed your work, but you haven't pushed your work yet, you can type **`git reset --soft HEAD~1`** and it will un-commit your work, so it will be just added to the stage.
+
+**Note:** Type **`git status`** instead of remembering it. It will give you the options on how to push your work and how to un-commit it.
+
+* What if you wonted to un-add and un-commit at the same time in one command?   
+Well, you can do that by typing **`git reset HEAD~1`** and it will undo whatever you just added and commited.
+
+**Note:** Unfortunatelly you can't use `git status` for this command, but you can always use **Google** to search it up (like my teacher always says "Google is your friend :) ") 
+
+
+
+
+
