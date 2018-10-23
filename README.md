@@ -74,7 +74,7 @@ To understand it better, here is the break down:
     * `origin` is the nickname of your remote repository (origin = standard)
     * URL is the location of your remote repository on github (make sure it is always in SSH! Refer back to initial setup to know how to do that!)
 
-* To push your work to github where you can save your work permenantly, type `git push -u origin master`   
+* To push your work to github where you can save your work permenantly, type **`git push -u origin master`**   
 To understand it better, here is the breakdown:
     * `git` is a git command
     * `push` is sending your work from your local repository (git workspace) to your remote repository (github) 
@@ -126,5 +126,5 @@ You can type **`git reset --hard HEAD~1`** and it will unedit, un-add, and un-co
 **Note:** This command is not recommended because it can mess up your work and your partner's work when collaborating.   
 **Note:** Unfortunately, you can't use `git status` for this command too, but you can always use **Google** to search it up.
 
-#### You are now done with the Github Tutorial. Good Job! Now go and do some coding to have some fun!
+### You are now done with the Github Tutorial. Good Job! Now go and do some coding to have some fun!
 
