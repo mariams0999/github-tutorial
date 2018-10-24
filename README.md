@@ -13,7 +13,7 @@ Git is a version control system that runs in the command line which means that i
 In order to start coding, you need to set up a Github account.
 Here is how you do it in steps:
 1. go to [github sign up page](https://github.com/join?source=header-home).
-2. create a username and put your email with a passoword of your preference (if you are an HSTAT student, please use your HSTAT email and passoword).
+2. create a username and put your email with a passoword of your preference (if you are an HSTAT student, please use your HSTAT email and password).
 3. Make sure to click on free account, unless you want to pay money for more features.
 
 After making an account we switch from HTTPS key to SSH (**S**ecure **SH**ell) key.   
@@ -31,7 +31,7 @@ Taking that into consideration, here are the steps of switching from HTTPS key t
 8. Copy and past the second SSH key into github as your key if you want it to be private
 9. Click on **Add SSH key**
 10. Go back into your Cloud9 and open your workspace
-11. Type **SSh -T git@github.com**
+11. Type **SSH -T git@github.com**
 
 Then, You are done with your initial setup!
 
@@ -50,6 +50,7 @@ To make a repository in github, called a remote, you need to follow the steps be
 7. Leave everything else the same and click on **Create Repository**
 
 Now you've made a new repository, you need to do some coding and save your code to the repository you made.
+<!--Add c9 command if they are working on cloud9 to open the file's working directory-->
 
 * First, make some edits and writing to your file.
 * To start adding and saving all those changes, you need to initialize git in your directory to make it ready to accept any git commands. We do this **only once** at the beginning.
@@ -90,7 +91,7 @@ If you ever got lost, you can always type **`git status`** (optional)
 * It will show you what commands you can use to fix your problems.
     * Example: If you haven't added your file to the stage, it will show you how you can add it by using `git add`
 
-If you want to review your commits, you can head to github.com and look for that or you can type **`git log`** 
+If you want to review your commits, you can head to your [github](github.com) and look for that or you can type **`git log`** 
 * `git log` will show you all the past commits made for this repository and will give you an SHA number for each commit (it is like an ID number for each commit).
 * If your arrow got stuck in `git log`, press Q to quit.
 
