@@ -148,7 +148,9 @@ However, humans make mistakes and it is something okay to do. If you typed in **
     3. Click on **Delete this repository** 
     4. Type in the name of the repository
     5. Click on **I understand the counsequences, delete this repository**   
+
 Now you can even handle errors with git! Did a mistake? Go and handle it like a super hero!
+
 ---
 ## Collaboration 
 
