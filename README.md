@@ -135,13 +135,21 @@ You can type **`git reset --hard HEAD~1`** and it will unedit, un-add, and un-co
 Github is a good source for collaboration without messing up the owner’s code even though you are changing files and code of that person. This seems complex at first, but once I explain how it works, it will be easier to understand.
 
 1. Go to your [github account](github.com) and sign in.
-2. Click on “**Explore**” at the top of the main page and it will show you different repositories you might be interested in. Pick out an easy one to work with for your first try and if you don’t like any of those repositories, ask a friend who uses github to send you their repository’s link.
+2. Click on "**Explore**" at the top of the main page and it will show you different repositories you might be interested in. Pick out an easy one to work with for your first try and if you don’t like any of those repositories, ask a friend who uses github to send you their repository’s link.
 3. After picking out a repository, click on “**fork**” at the top right corner. This will make a copy of the owner’s repository to your github account (remote → remote).
-4. After forking, click on “**clone or download**”” which is shown in a green box at the top. Cloning is making a copy of this repository to your local one which is your git workspace (Cloud9 if using it) (remote → local).
+4. After forking, click on "**clone or download**" which is shown in a green box at the top. Cloning is making a copy of this repository to your local one which is your git workspace ([Cloud9](c9.io) if using it) (remote → local).
 5. Click on the clipboard shown to make a copy of the URL. Make sure it is in SSH key.
-6. Head over to your git workspace and type `**git clone URL**` (URL = the URL you just copied in step 5.
+6. Head over to your git workspace and type **`git clone URL`** (URL = the URL you just copied in step 5.
 7. Now you can edit the files the way you want. Then, you can save, add, commit, and push in which you already know how to do by doing the steps in the sections above.
-8. After pushing, go back to your repository on github that was forked and click on “**New pull request**”. This will send the owner a notification that you want him/her to take your changes into consideration and maybe accept it (called merging in github). By accepting or merging the pull request, your changes will now live on the owner’s repository.
+8. After pushing, go back to your repository on github that was forked and click on "**New pull request**". This will send the owner a notification that you want him/her to take your changes into consideration and maybe accept it (called merging in github). By accepting or merging the pull request, your changes will now live on the owner’s repository.
+
+What if you got a pull request? How do you merge (approve) it or cancel (deny) it?
+
+1. Go to your github account and head over to the repository you got the request in.
+2. Click on "**Pull requests**" and you will find a list of the requests you have and who sent them.
+3. click on the request and then click on merge which is shown in a green box on github if you want to approve or accept the request or click on cancel if you want to deny it.   
+
+**Note:** Try this with a friend if you don't have any pull request for practice! (remember: practice makes perfect :))
 
 ### You are now done with the Github Tutorial. Good Job! Now go and do some coding on your own to have some fun!
 
