@@ -138,7 +138,7 @@ However, humans make mistakes and it is something okay to do. If you typed in **
     * `-rf` stands for recursively with force which means to remove every this git init has done with force even if it is protected.
     * `.git` is a group of files that gets created once you write `git init`
 
-* If you want to remove a repository that you don't need anymore. You can delete it from your local or git workspace by typing `rm -rf reponame` (reponame = the name of the repository you want to remove) if there is stuff inside that repository on your local.
+* If you want to remove a repository that you don't need anymore. You can delete it from your local or git workspace by typing **`rm -rf reponame`** (reponame = the name of the repository you want to remove) if there is stuff inside that repository on your local.
     * rm stands for remove which deletes all files in that specific repository
     * -rf stands for recursively with force which means to remove every file with force even if it was protected.
 
