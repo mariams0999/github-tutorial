@@ -130,7 +130,7 @@ You can type **`git reset --hard HEAD~1`** and it will unedit, un-add, and un-co
 **Note:** Unfortunately, you can't use `git status` for this command too, but you can always use **Google** to search it up.
 
 ---
-## Error handeling
+## Error handling
 
 * When you type **`git init`**, you have to type it in the directory you are working in. You **NEVER** type this command in **~/workspace**.   
 However, humans make mistakes and it is something okay to do. If you typed in **`git init`** in **~/workspace** or in the wrong directory, you can reverse what you did with the command **`rm -rf .git`**. 
