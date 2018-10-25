@@ -169,7 +169,8 @@ What if you got a pull request? How do you merge (approve) it or cancel (deny) i
 
 1. Go to your github account and head over to the repository you got the request in.
 2. Click on **Pull requests** and you will find a list of the requests you have and who sent them.
-3. click on the request and then click on merge which is shown in a green box on github if you want to approve or accept the request or click on cancel if you want to deny it.   
+3. click on the request and then click on merge which is shown in a green box on github if you want to approve or accept the request or click on cancel if you want to deny it.  
+4. If you decide to merge the changes, go to your git workspace and type **`git pull`** to pull those changes from the remote to your local.
 
 **Note:** Try this with a friend if you don't have any pull request for practice! (remember: practice makes perfect :))
 
