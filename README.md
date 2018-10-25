@@ -5,7 +5,7 @@ _by Mariam Saleh_
 ---
 ## Git vs. GitHub
 
-Git is a version control system that runs in the command line which means that it keeps track of different verions of your code and save the changes you make to your files. However, Github is where you make repositories which is where you save your code forever, so if something happened to your git workspace for some reason, your code and files are always saved on Github. Git doesn't require Github to work, but Github requires Git. Additionally, Github is a good source to use to collaborate with others.
+Git is a version control system that runs in the command line which means that it keeps track of different verions of your code and save the changes you make to your files. However, Github is where you make repositories which is where you save your code forever, so if something happened to your git workspace for some reason, your code and files are always saved on Github. Git doesn't require Github to work, but Github requires Git. Additionally, Github is a good source to use to collaborate with others in a way that you don’t mess up someone else’s code and files.
 
 ---
 ## Initial Setup
@@ -17,6 +17,7 @@ Here is how you do it in steps:
 3. Make sure to click on free account, unless you want to pay money for more features.
 
 After making an account we switch from HTTPS key to SSH (**S**ecure **SH**ell) key.   
+
 The reason we do this is because when you git to push or clone which we will get to later on, we only need to enter our username and password only once.   
 Using HTTPS will ask you to enter your password everytime you type a URL while coding. On the other hand, using SSH will let you enter your username and password only once while setting it up, so you won't have to enter it every single time you write a URL.
 
@@ -49,7 +50,8 @@ To make a repository in github, called a remote, you need to follow the steps be
 6. Give the repository a name (a helpful suggestion is to give your repo the same name as your directory you made earlier)
 7. Leave everything else the same and click on **Create Repository**
 
-Now you've made a new repository, you need to do some coding and save your code to the repository you made.
+Now you've made a new repository, you need to do some coding and save your code to that repository you made.
+Head over to your git workspace (Cloud9 if you're using it) where you code and edit some files.
 <!--Add c9 command if they are working on cloud9 to open the file's working directory-->
 
 * First, make some edits and writing to your file.
@@ -127,5 +129,19 @@ You can type **`git reset --hard HEAD~1`** and it will unedit, un-add, and un-co
 **Note:** This command is not recommended because it can mess up your work and your partner's work when collaborating.   
 **Note:** Unfortunately, you can't use `git status` for this command too, but you can always use **Google** to search it up.
 
-### You are now done with the Github Tutorial. Good Job! Now go and do some coding to have some fun!
+---
+## Collaboration 
+
+Github is a good source for collaboration without messing up the owner’s code even though you are changing files and code of that person. This seems complex at first, but once I explain how it works, it will be easier to understand.
+
+1. Go to your [github account](github.com) and sign in.
+2. Click on “**Explore**” at the top of the main page and it will show you different repositories you might be interested in. Pick out an easy one to work with for your first try and if you don’t like any of those repositories, ask a friend who uses github to send you their repository’s link.
+3. After picking out a repository, click on “**fork**” at the top right corner. This will make a copy of the owner’s repository to your github account (remote → remote).
+4. After forking, click on “**clone or download**”” which is shown in a green box at the top. Cloning is making a copy of this repository to your local one which is your git workspace (Cloud9 if using it) (remote → local).
+5. Click on the clipboard shown to make a copy of the URL. Make sure it is in SSH key.
+6. Head over to your git workspace and type `**git clone URL**` (URL = the URL you just copied in step 5.
+7. Now you can edit the files the way you want. Then, you can save, add, commit, and push in which you already know how to do by doing the steps in the sections above.
+8. After pushing, go back to your repository on github that was forked and click on “**New pull request**”. This will send the owner a notification that you want him/her to take your changes into consideration and maybe accept it (called merging in github). By accepting or merging the pull request, your changes will now live on the owner’s repository.
+
+### You are now done with the Github Tutorial. Good Job! Now go and do some coding on your own to have some fun!
 
